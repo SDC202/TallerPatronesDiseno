@@ -2,21 +2,21 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package V1_4.Decorator;
+package V1_5.Decorator;
 
 /**
  *
  * @author jorge
  */
-public class SignalDecorator extends NotificacionDecorator{
-    public SignalDecorator(Notificacion notificacion) {
+public class WireDecorator extends NotificacionDecorator {
+    public WireDecorator(Notificacion notificacion) {
         super(notificacion);
     }
 
     @Override
     public void enviarMensaje(String mensaje) {
-        System.out.println("Enviando notificación por Señal...");
+        System.out.println("Enviando notificación mediante Wire...");
         super.enviarMensaje(mensaje);
-        System.out.println("Notificación enviada por Señal.");
+        System.out.println("Notificación enviada por Wire.");
     }
 }
